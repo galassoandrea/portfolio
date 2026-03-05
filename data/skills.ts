@@ -1,0 +1,22 @@
+export const skills = [
+  "Python",
+  "PyTorch",
+  "TensorFlow",
+  "HuggingFace",
+  "Pandas",
+  "Numpy",
+  "SKlearn",
+  "Colab",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "ReactJS",
+  "NextJS",
+  "NodeJS",
+  "TailwindCSS",
+  "SQL",
+  "Git",
+  "GitHub",
+  "Vercel"
+];

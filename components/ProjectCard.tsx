@@ -1,5 +1,6 @@
 import { Project } from "@/data/projects";
 import Image from "next/image";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -28,8 +29,14 @@ export default function ProjectCard({ project }: { project: Project }) {
 
         {/* Links */}
         <div className="flex justify-between">
-          <a href={project.githubLink} className="text-sm font-semibold hover:text-blue-400 transition">GitHub →</a>
-          <a href={project.previewLink} className="text-sm font-semibold hover:text-blue-400 transition">Live Demo →</a>
+          <a href={project.githubLink} className="flex items-center gap-2 text-sm font-semibold hover:text-blue-400 transition">
+            Code
+            <FiGithub size={16}/>
+          </a>
+          <a href={project.previewLink} className="flex items-center gap-2 text-sm font-semibold hover:text-blue-400 transition">
+            Demo
+            <FiExternalLink size={16}/>
+          </a>
         </div>
       </div>
     </div>

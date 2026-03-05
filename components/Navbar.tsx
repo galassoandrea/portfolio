@@ -16,7 +16,9 @@ export default function Navbar() {
         
         <div className="flex gap-8 items-center text-md font-medium text-slate-400">
           <Link href="/" className="hover:text-white transition">Home</Link>
+          <Link href="#about" className="hover:text-white transition">About</Link>
           <Link href="#projects" className="hover:text-white transition">Projects</Link>
+          <Link href="#skills" className="hover:text-white transition">Skills</Link>
           <Link href="/cv_public.pdf" target="_blank" className="hover:text-white transition">Resume</Link>
           <Link href="#contact" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition">
             Contact
