@@ -57,7 +57,7 @@ export default function Skills() {
 
       <div className="flex flex-wrap justify-center gap-4 w-full">
         {skills.map((skill) => {
-          const IconComponent = skillIcons[skill];
+          const IconComponent = skillIcons[skill as keyof typeof skillIcons];
           return (
             <div
               key={skill}
