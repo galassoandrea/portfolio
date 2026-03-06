@@ -49,7 +49,7 @@ const skillIcons = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="max-w-6xl mx-auto mb-20 px-8 py-24">
+    <section id="skills" className="max-w-6xl mx-auto mb-20 md:px-8 py-24">
       <h2 className="text-3xl font-bold mb-12 flex items-center gap-4">
         <span className="h-2 w-12 bg-blue-500"></span>
         Skills & Tools

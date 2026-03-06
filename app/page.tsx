@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="h-screen flex flex-col items-center justify-center text-center p-8"
+        className="h-screen flex flex-col items-center justify-center text-center md:p-8"
       >
         <h1 className="text-6xl font-bold bg-linear-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
           Hi, I'm Andrea
@@ -34,7 +34,7 @@ export default function Home() {
             target="_blank"
           >
             Download CV
-            <FiDownload size={18} />
+            <FiDownload size={18} className="hidden md:inline"/>
           </Link>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function Home() {
       <About/>
 
       {/* Projects Section */}
-      <section id="projects" className="max-w-6xl mx-auto px-8 pb-24">
+      <section id="projects" className="max-w-6xl mx-auto md:px-8 md:pb-24">
         <h2 className="text-3xl font-bold mb-12 flex items-center gap-4">
           <span className="h-2 w-12 bg-blue-500"></span>
           Some Of My Projects
@@ -68,8 +68,8 @@ export default function Home() {
       <Skills />
 
       {/* Contact Section */}
-      <section id="contact" className="max-w-2xl mx-auto px-8 py-24">
-        <div className="bg-slate-800/30 border border-slate-800 rounded-2xl p-8 md:p-12">
+      <section id="contact" className="max-w-2xl mx-auto md:px-8 md:py-24">
+        <div className="bg-slate-800/30 border border-slate-800 rounded-2xl px-4 py-6 md:p-12">
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
           <p className="text-slate-400 mb-8">
             I'm currently looking for new opportunities. Whether you have a
