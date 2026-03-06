@@ -17,7 +17,8 @@ import {
   SiGit,
   SiGithub,
   SiVercel,
-  SiGooglecolab
+  SiGooglecolab,
+  SiDatabricks
 } from "react-icons/si";
 import { MdSmartToy } from "react-icons/md";
 import { FaDatabase } from "react-icons/fa";
@@ -42,14 +43,15 @@ const skillIcons = {
   Git: SiGit,
   GitHub: SiGithub,
   Vercel: SiVercel,
-  Colab: SiGooglecolab
+  Colab: SiGooglecolab,
+  Databricks: SiDatabricks
 };
 
 export default function Skills() {
   return (
-    <section id="skills" className="max-w-6xl mx-auto px-8 py-24">
+    <section id="skills" className="max-w-6xl mx-auto mb-20 px-8 py-24">
       <h2 className="text-3xl font-bold mb-12 flex items-center gap-4">
-        <span className="h-px w-12 bg-blue-500"></span>
+        <span className="h-2 w-12 bg-blue-500"></span>
         Skills & Tools
       </h2>
 

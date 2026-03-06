@@ -7,8 +7,13 @@ export default function ContactForm() {
 
   async function handleSubmit(formData: FormData) {
     setStatus("loading");
-    await contactAction(formData);
-    setStatus("success");
+    const result = await contactAction(formData);
+    if (result.success) {
+        setStatus("success");
+    } else {
+        setStatus("idle");
+        alert("Oops! Something went wrong. Please try again.");
+    }
   }
 
   if (status === "success") {
@@ -16,7 +21,7 @@ export default function ContactForm() {
         <div className="text-center p-12 bg-green-500/10 border border-green-500/50 rounded-xl">
             <h3 className="text-2xl font-bold text-green-400">Message Sent!</h3>
             <p className="mt-2 text-slate-400">Thanks for reaching out. I'll get back to you soon.</p>
-            <button onClick={() => setStatus("idle")} className="mt-6 text-sm underline">Send another?</button>
+            <button onClick={() => setStatus("idle")} className="mt-6 text-sm underline cursor-pointer">Send another?</button>
         </div>
     );
   }

@@ -7,6 +7,7 @@ export const skills = [
   "Numpy",
   "SKlearn",
   "Colab",
+  "Databricks",
   "HTML",
   "CSS",
   "JavaScript",

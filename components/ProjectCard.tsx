@@ -29,11 +29,11 @@ export default function ProjectCard({ project }: { project: Project }) {
 
         {/* Links */}
         <div className="flex justify-between">
-          <a href={project.githubLink} className="flex items-center gap-2 text-sm font-semibold hover:text-blue-400 transition">
+          <a href={project.githubLink} className="flex items-center gap-2 px-4 py-2 border border-slate-700 hover:bg-slate-800 rounded-lg text-sm font-semibold hover:text-blue-400 transition">
             Code
             <FiGithub size={16}/>
           </a>
-          <a href={project.previewLink} className="flex items-center gap-2 text-sm font-semibold hover:text-blue-400 transition">
+          <a href={project.previewLink} className="flex items-center gap-2 px-4 py-2 border border-slate-700 hover:bg-slate-800 rounded-lg text-sm font-semibold hover:text-blue-400 transition">
             Demo
             <FiExternalLink size={16}/>
           </a>

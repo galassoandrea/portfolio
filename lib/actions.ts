@@ -1,16 +1,40 @@
 "use server";
 
+import { Resend } from "resend";
+
 export async function contactAction(formData: FormData) {
-  const name = formData.get("name");
-  const email = formData.get("email");
-  const message = formData.get("message");
 
-  // Logic: Here is where you would integrate with an email service 
-  // (like Resend, SendGrid, or Nodemailer)
-  console.log("New Message Received:", { name, email, message });
+  // Create Resend instance
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
-  // For now, we'll just simulate a delay
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  // Get form inputs
+  const name = formData.get("name") as string;
+  const email = formData.get("email") as string;
+  const message = formData.get("message") as string;
 
-  return { success: true };
+  // Send the email
+  try {
+    const { data, error } = await resend.emails.send({
+      from: 'Portfolio Contact <onboarding@resend.dev>',
+      to: ['galassoandrea99@gmail.com'],
+      subject: `New Message from ${name}`,
+      replyTo: email,
+      html: `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
+    });
+
+    if (error) {
+      console.error("Resend Error:", error);
+      return { success: false, error: error.message };
+    }
+
+    return { success: true };
+  } catch (err) {
+    console.error("System Error:", err);
+    return { success: false, error: "Something went wrong." };
+  }
 }

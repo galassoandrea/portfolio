@@ -6,7 +6,7 @@ working on academic projects related to recommendation systems, \
 Graph Neural Networks (GNNs) and interpretability of Transformer \
 models - and Software Engineering - working on several web \
 applications. \
-In the last few months I experimented with lots of different AI models and tools \
+In the last few months I experimented with lots of different AI models, tools \
 and prompt engineering techniques and I learned how to combine my AI \
 and SE skills to build complex web applications integrating AI \
 systems. \
