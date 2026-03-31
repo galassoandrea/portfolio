@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     title: "ShellSLM",
     description: "A small language model fine-tuned to translate natural language instructions into shell commands.",
-    image: "/shell-slm.PNG",
+    image: "/shell-slm.png",
     tags: ["Python", "Transformers", "Unsloth", "Peft", "LoRA"],
     githubLink: "https://github.com/galassoandrea/shell-SLM",
     previewLink: "https://huggingface.co/spaces/andreagalasso99/shell-SLM"
