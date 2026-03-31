@@ -25,11 +25,11 @@ export const projects: Project[] = [
     previewLink: "https://huggingface.co/spaces/andreagalasso99/financial-rag-assistant"
   },
   {
-    title: "SearchSphere",
-    description: "A simple RAG Q&A search engine based on SQuAD 2.0 dataset.",
-    image: "/search-sphere.PNG",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Gemini", "Transformers"],
-    githubLink: "https://github.com/galassoandrea/SearchSphere",
-    previewLink: "https://search-sphere.vercel.app/"
+    title: "ShellSLM",
+    description: "A small language model fine-tuned to translate natural language instructions into shell commands.",
+    image: "/shell-slm.PNG",
+    tags: ["Python", "Transformers", "Unsloth", "Peft", "LoRA"],
+    githubLink: "https://github.com/galassoandrea/shell-SLM",
+    previewLink: "https://huggingface.co/spaces/andreagalasso99/shell-SLM"
   },
 ];
